@@ -1,8 +1,5 @@
 .gradle
 build/
-!gradle-wrapper.jar
-*.class
-*.jar
 *.iml
 .idea/
 *.ipr
