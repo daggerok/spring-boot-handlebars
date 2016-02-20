@@ -1,4 +1,8 @@
-{{#with model}}
-    <h4>model info</h4>
-    <div class="container-fluid">{{{.}}}</div>
-{{/with}}
+<h4 class="panel">model info</h4>
+<div class="panel">
+    <ul class="list-style-type-none">
+    {{#each .}}
+        <li>{{@key}}: {{this}}</li>
+    {{/each}}
+    </ul>
+</div>

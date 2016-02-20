@@ -1,6 +1,6 @@
 handlebars:
   prettyPrint: true
-  exposeRequestAttributes: true
+  exposeRequestAttributes: false
   exposeSessionAttributes: true
   allowRequestOverride: true
   exposeSpringMacroHelpers: true

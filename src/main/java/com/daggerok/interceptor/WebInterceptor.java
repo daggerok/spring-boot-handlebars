@@ -20,9 +20,8 @@ public class WebInterceptor implements WebRequestInterceptor {
     public void postHandle(final WebRequest request, final ModelMap model) throws Exception {
         Optional.ofNullable(model).ifPresent(m -> {
             try {
-                m.addAttribute("principal", objectMapper.writeValueAsString(request.getUserPrincipal()));
+                //m.addAttribute("principal", objectMapper.writeValueAsString(request.getUserPrincipal()));
                 m.addAttribute("parameters", objectMapper.writeValueAsString(request.getParameterMap()));
-                m.addAttribute("model", objectMapper.writeValueAsString(model));
             } catch (Throwable e) { /* sorry.. :) */ }
         });
     }
