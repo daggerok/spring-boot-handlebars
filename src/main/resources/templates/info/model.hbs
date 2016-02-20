@@ -1,8 +1,8 @@
 <h4 class="panel">model info</h4>
 <div class="panel">
     <ul class="list-style-type-none">
-    {{#each .}}
-        <li>{{@key}}: {{this}}</li>
+    {{#each this}}{{! '.' === 'this'; map iteration for javas version same as object iteration for js version}}
+        <li>{{@key}}: {{.}}</li>
     {{/each}}
     </ul>
 </div>
