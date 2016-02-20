@@ -1,0 +1,9 @@
+handlebars:
+  prettyPrint: true
+  exposeRequestAttributes: true
+  exposeSessionAttributes: true
+  allowRequestOverride: true
+  exposeSpringMacroHelpers: true
+  resolver:
+    method: true
+    field: true
