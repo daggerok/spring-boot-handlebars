@@ -1,0 +1,14 @@
+{{> parts/head}}
+
+<h3 class="container panel panel-heading"></h3>
+    {{#with done}}
+        <div id="content">
+            Done with {{.}} result.
+        </div>
+    {{else}}
+        <div id="content">
+            You can upload or download a file by posting it here.
+        </div>
+    {{/with}}
+
+{{> parts/tail}}

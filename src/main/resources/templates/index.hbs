@@ -2,6 +2,9 @@
 
 <h4 class="panel panel-heading">\{{ Handlebars }}</h4>
 {{> info/model}}
-<div id="content">{{helloWorld 'hello there! :)'}}</div>
+<div id="content">
+    {{helloWorld 'hello there! :)'}}<br/>
+    <a href="{{springMacroRequestContext.request.contextPath}}/file">upload or download files</a>
+</div>
 
 {{> parts/tail}}
