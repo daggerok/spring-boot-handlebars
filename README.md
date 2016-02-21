@@ -5,7 +5,7 @@ use
 
 - handlebars
 - spring boot
-- spring mvc + interceptor
+- spring mvc, interceptor
 - webjars bootstrap
 - gradle
 
