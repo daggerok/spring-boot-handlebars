@@ -17,12 +17,11 @@ public class WebInterceptor implements WebRequestInterceptor {
     public void preHandle(WebRequest request) throws Exception {}
 
     @Override
+    @lombok.SneakyThrows
     public void postHandle(final WebRequest request, final ModelMap model) throws Exception {
         Optional.ofNullable(model).ifPresent(m -> {
-            try {
-                //m.addAttribute("principal", objectMapper.writeValueAsString(request.getUserPrincipal()));
-                m.addAttribute("parameters", objectMapper.writeValueAsString(request.getParameterMap()));
-            } catch (Throwable e) { /* sorry.. :) */ }
+            //m.addAttribute("principal", objectMapper.writeValueAsString(request.getUserPrincipal()));
+            m.addAttribute("parameters", objectMapper.writeValueAsString(request.getParameterMap()));
         });
     }
 
